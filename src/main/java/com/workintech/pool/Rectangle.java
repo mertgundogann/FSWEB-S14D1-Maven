@@ -4,17 +4,25 @@ public class Rectangle {
     private double width;
     private double length;
 
+    // Constructor
     public Rectangle(double width, double length) {
-        this.width = width<0?0 : width;
-        this.length = length<0 ? 0 : length;
+        // 0'dan küçükse 0 olarak set edilsin
+        this.width = (width < 0) ? 0 : width;
+        this.length = (length < 0) ? 0 : length;
     }
-    public double getWidth(){
+
+    // getWidth methodu
+    public double getWidth() {
         return width;
     }
-    public double getLength(){
+
+    // getLength methodu
+    public double getLength() {
         return length;
     }
-    public double getArea(){
-        return width*length;
+
+    // getArea methodu (Area = width * length)
+    public double getArea() {
+        return width * length;
     }
 }

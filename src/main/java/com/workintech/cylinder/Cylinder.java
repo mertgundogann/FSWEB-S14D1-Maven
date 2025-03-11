@@ -5,7 +5,7 @@ public class Cylinder extends Circle{
 
     public Cylinder(double radius, double height) {
         super(radius);
-        this.height = Math.max(height, 0);
+        this.height = height<0?0 : height;
     }
     public double getHeight() {
         return height;
